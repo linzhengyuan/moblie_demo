@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	width:100%;
+	overflow:hidden;
+}
+.loading{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-44px 0 0 -44px;
+	z-index:99;
+}
+.page{
+	width:100%;
+	height:100%;
+	position:absolute;
+	font-size:100px;
+	text-align:center;
+}
+.page-current{
+	z-index:1;
+}
+.wrap{
+	position:relative;
+}
+/*.page .wrap{
+	height:500px;
+}*/
+.wrap img{
+	max-width:100%;
+	display:block;
+	height:auto;
+}
+.hide{
+	display:none;
+}
+.page-1-1{
+	background:url(../images/page-01.jpg) no-repeat center;
+	background-size:cover;
+}
+.page-2-1{
+	background:url(../images/page-02.jpg) no-repeat center;
+	background-size:cover;
+}
+.page-3-1{
+	background:url(../images/page-03.jpg) no-repeat center;
+	background-size:cover;
+}
+.page-4-1{
+	background:url(../images/page-04.jpg) no-repeat center;
+	background-size:cover;
+}
+.page-5-1{
+	background:url(../images/page-05.jpg) no-repeat center;
+	background-size:cover;
+}
+.page-6-1{
+	background:url(../images/page-06.jpg) no-repeat center;
+	background-size:cover;
+}
+.page-7-1{
+	background:url(../images/page-07.jpg) no-repeat center;
+	background-size:cover;
+}
+.page-8-1{
+	background:url(../images/page-08.jpg) no-repeat center;
+	background-size:cover;
+}
+.page-9-1{
+	background:url(../images/page-09.jpg) no-repeat center;
+	background-size:cover;
+}
+.page-10-1{
+	background:url(../images/page-10.jpg) no-repeat center;
+	background-size:cover;
+}
+.page-11-1{
+	background:url(../images/page-11.jpg) no-repeat center;
+	background-size:cover;
+}
+.page-12-1{
+	background:url(../images/page-12.jpg) no-repeat center;
+	background-size:cover;
+}
+.page-13-1{
+	background:url(../images/page-13.jpg) no-repeat center;
+	background-size:cover;
+}
+.page-14-1{
+	background:url(../images/page-14.jpg) no-repeat center;
+	background-size:cover;
+}
+.page-15-1{
+	background:url(../images/page-15.jpg) no-repeat center;
+	background-size:cover;
+}
+
+/*音乐播放符号css*/
+#play{
+	position:absolute;
+	top:5%;
+	right:5%;
+	z-index:2;
+}
+#play img{
+	border:none;
+	outline:none;
+}
+.music_active{
+	-webkit-animation:reverseRotataZ 1.2s linear infinite;
+	animation:reverseRotataZ 1.2s linear infinite;
+}
+@-webkit-keyframes reverseRotataZ{
+	0%{}
+	100%{-webkit-transform:rotate(360deg);}
+}
+@keyframes reverseRotataZ{
+	0%{}
+	100%{transform:rotate(360deg);}
+}
