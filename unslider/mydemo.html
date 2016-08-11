@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>轮播</title>
+</head>
+
+<style type="text/css">
+*{margin:0;
+padding: 0;
+}
+.banner { position: relative; overflow: auto; }
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+.myslider .arrow { position: absolute; top: 200px;}
+.myslider #al { left: 15px;}
+.myslider #ar { right: 15px;}
+.banner .inner{
+	    padding: 160px 0 110px;
+}
+.myslider .dots { position: absolute; left: 0; right: 0; bottom: 20px;width: 100%;text-align: center;}
+.myslider .dots li 
+{ 
+	display: inline-block; 
+	width: 10px; 
+	height: 10px; 
+	margin: 0 4px; 
+	text-indent: -999em; 
+	border: 2px solid #fff; 
+	border-radius: 6px; 
+	cursor: pointer; 
+	opacity: .4; 
+	-webkit-transition: background .5s, opacity .5s; 
+	-moz-transition: background .5s, opacity .5s; 
+	transition: background .5s, opacity .5s;
+}
+.myslider .dots li.active 
+{
+	background: #fff;
+	opacity: 1;
+}
+</style>
+<body>
+<div class="banner myslider">
+    <ul>
+        <li style="background-image: url(sunset.jpg);">
+        	<div class="inner">
+				<h1>The jQuery slider that just slides.</h1>
+			</div>
+		</li>
+        <li style="background-image: url(subway.jpg); ">
+	        <div class="inner">
+				<h1>The jQuery slider that just slides.</h1>
+			</div>
+		</li>
+        <li style="background-image: url(shop.jpg);">
+	        <div class="inner">
+				<h1>The jQuery slider that just slides.</h1>
+			</div>
+		</li>
+    </ul>
+    <a href="javascript:void(0);" class="unslider-arrow prev"><img class="arrow" id="al" src="arrowl.png" alt="prev" width="20" height="35"></a>
+    <a href="javascript:void(0);" class="unslider-arrow next"><img class="arrow" id="ar" src="arrowr.png" alt="next" width="20" height="37"></a>
+</div>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="unslider.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    var unslider = $('.banner').unslider({
+      speed: 500,			   //  切换的速度
+      delay: 3000,			  //  切换的速度
+      keys: true,			   //  是否启用左右按钮控制slider切换
+      fluid: false,			  // 是否每次在容器大小改变的时候，修正slider的大小
+      pause:true,				 //鼠标以上去是否暂停播放
+      arrows: false,			   //  是否显示左右箭头，用于slider切换
+      dots: true				  //  是否显示白色圆点，用于slider切换
+    });
+    	$('.unslider-arrow').click(function() {
+        var fn = this.className.split(' ')[1];
+        unslider.data('unslider')[fn]();
+    });
+ });
+</script>
+</body>
+</html>
