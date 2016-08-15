@@ -1,0 +1,89 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>视频播放</title>
+<style>
+*{margin:0;padding:0;font-family:"微软雅黑";}
+.header{
+	width:100%;
+}
+ul{
+	width:960px;
+	margin:0 auto;
+}
+ul li{
+	list-style:none;
+	width:320px;
+	height:60px;
+	line-height:60px;
+	cursor:pointer;
+	float:left;
+	text-align:center;
+	background:#e9380e;
+	color:#fff;
+}
+.check{
+	background:#fd6540;
+}
+.content{
+	width:100%;
+	margin:0 auto;
+	margin-top:30px;
+	text-align:center;
+}
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+    overflow:hidden;
+}
+.version{
+	width: 960px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: left;
+}
+.version-mobile{
+	width:100%;
+}
+.ul-mobile{
+	width:100%;
+}
+.li-mobile{
+	width:33.333333%;
+}
+.player-mobile{
+	width:96%;
+	height:350px;
+}
+</style>
+</head>
+
+<body>
+	<div class="header">
+    	<ul>
+        	<li class="pc">PC端html5版</li>
+            <li class="flash">PC端Flash版</li>
+            <li class="mobile">移动端版</li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+    <p class="version"></p>
+    <div class="content">
+       <section id="video">
+           <video id="player" width="960" height="540" controls loop autoplay>
+               <source src="test.mp4"/>
+           </video>
+   	   </section>
+       <div id="CuPlayer" style="margin:0 auto;" ></div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swfobject.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
