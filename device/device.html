@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="ztemt">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!--mobileReset是初始化样式，属公用样式-->
+<link href="css/mobileReset.css" rel="stylesheet">
+<link href="css/home.css" rel="stylesheet">
+<style>
+.info{
+	font-family:DroidSansFallback;
+	border-bottom:1px solid #dcdcdc;
+	padding:3%;
+}
+.info p{
+	color:#808080;
+	font-size:1.2em;
+	line-height:1.7em;
+}
+.info p span{
+	color:#000;
+}
+.title_info{
+	font-weight:bold;
+	color:#000;
+	font-size:1.5em;
+	line-height:1.5em;
+}
+.user_top{
+	width:100%;
+	height:auto;
+    position:relative;
+	background:#0288d1;
+}
+.sy{
+	color:#fff;
+	font-size:1.4em;
+	vertical-align: middle;
+}
+.sbxx{
+	color:#fff;
+	font-size:1.5em;
+	vertical-align: middle;
+	display: inline-block;
+	width: 75%;
+	font-weight:bold;
+	text-align:center;
+}
+.user_menu01{
+	width:6%;
+	display:inline-block;
+	border:none;
+}
+.user_menu02{
+	width:10%;
+	display:inline-block;
+	right:0px;
+	position:absolute;
+	border:none;
+}
+.deviceinfo{
+	position:relative;
+	width: 100%;
+	margin:0 auto;
+}
+.deviceinfo a{
+	position:absolute;
+	display:inline-block;
+	width: 22%;
+	height: 75%;
+}
+.mmcl{
+	top: 22%;
+	left: 6%;
+}
+.aqpz{
+	top:22%;
+	left:38%;
+}
+.sbxz{
+	top:22%;
+	left:70%;
+}
+
+</style>
+<title>设备配置</title>
+</head>
+
+<body>
+    <header class="user_top top">
+        <a href="../home/home.html"><img src="images/leftBtn.png" class="response user_menu01"><span class="sy">首页</span></a>
+        <span class="sbxx">设备配置</span>
+        <img src="images/user_menu02.png" class="response user_menu02">
+        <a href="javascript:void(0)" class="home_user"></a>
+    </header>
+    <!--遮罩shade开始-->
+    <div class="shade">
+        <div class="deviceinfo">
+            <img src="images/Device.jpg" class="response">
+            <!--密码策略链接-->
+            <a href="#" class="mmcl"></a>
+            <!--安全配置链接-->
+            <a href="#" class="aqpz"></a>
+            <!--设备限制链接-->
+            <a href="#" class="sbxz"></a>
+        </div>        
+        <!--遮罩的内容-->        
+        <div class="user_left"></div>
+        <!--用户菜单开始-->
+        <div class="user">
+            <div class="user_1">
+                <img src="images/user_img.jpg" class="response">
+                <p>陈测试</p>
+            </div>
+           
+        </div>
+        <!--用户菜单结束-->  
+    </div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
